@@ -72,6 +72,6 @@ Bu proje şu anda kişisel bir çalışma olmakla birlikte, geri bildirimlere a�
 
 💡 Teşekkürler! Bu repoya göz attığınız için teşekkür ederim. Eğer faydalı bulduysanız bir ⭐ bırakabilirsiniz.
 ![image](https://github.com/eniscode/MyPortfolyoEnis/blob/master/MyPortfolyoEnis/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-07-10%20143440.png?raw=true))
-![image](https://github.com/eniscode/MyPortfolyoEnis/blob/master/MyPortfolyoEnis/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-07-10%20143440.png?raw=true))
-![image](https://github.com/eniscode/MyPortfolyoEnis/blob/master/MyPortfolyoEnis/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-07-10%20143440.png?raw=true))
-![image](https://github.com/eniscode/MyPortfolyoEnis/blob/master/MyPortfolyoEnis/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-07-10%20143440.png?raw=true))
+![image](https://github.com/eniscode/MyPortfolyoEnis/blob/master/MyPortfolyoEnis/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-07-10%20143511.png?raw=true)
+![image](https://github.com/eniscode/MyPortfolyoEnis/blob/master/MyPortfolyoEnis/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-07-10%20143525.png?raw=true))
+![image](https://github.com/eniscode/MyPortfolyoEnis/blob/master/MyPortfolyoEnis/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-07-10%20143553.png?raw=true))

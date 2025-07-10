@@ -1,0 +1,139 @@
+﻿
+@{
+    ViewData["Title"] = "İletişim";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<style>
+    html, body {
+        /* overflow: hidden !important; */
+        overflow-x: hidden;
+        height: 100%;
+        width: 100%;
+    }
+
+    #colorlib-page,
+    #colorlib-main {
+        /* overflow: hidden !important; */
+    }
+
+
+    .contact-container {
+        max-width: 700px;
+        margin: 48px auto 0 auto;
+        background: #fafafa;
+        border-radius: 18px;
+        box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+        padding: 40px 32px 32px 32px;
+    }
+
+    .contact-title {
+        font-size: 2.2rem;
+        font-weight: bold;
+        color: #222;
+        margin-bottom: 18px;
+        text-align: center;
+    }
+
+    .contact-form label {
+        font-weight: 500;
+        color: #333;
+    }
+
+    .contact-form input, .contact-form textarea {
+        border-radius: 8px;
+        border: 1px solid #ddd;
+        font-size: 1.1rem;
+    }
+
+    .contact-form textarea {
+        min-height: 120px;
+        resize: vertical;
+    }
+
+    .contact-form button {
+        border-radius: 30px;
+        padding: 10px 36px;
+        font-size: 1.2rem;
+        background: #00bcd4;
+        color: #fff;
+        border: none;
+        font-weight: 600;
+        transition: background 0.2s;
+    }
+
+        .contact-form button:hover {
+            background: #0097a7;
+        }
+
+    .contact-social {
+        margin-top: 32px;
+        text-align: center;
+    }
+
+        .contact-social a {
+            display: inline-block;
+            margin: 0 12px;
+            color: #222;
+            font-size: 2.2rem;
+            transition: color 0.2s, transform 0.2s;
+        }
+
+            .contact-social a:hover {
+                color: #00bcd4;
+                transform: scale(1.15);
+            }
+
+    .contact-mail {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 18px;
+        font-size: 1.15rem;
+        color: #444;
+        gap: 8px;
+    }
+
+        .contact-mail i {
+            font-size: 1.5rem;
+            color: #00bcd4;
+        }
+</style>
+
+<div class="contact-container">
+    <div class="contact-title">İletişim</div>
+    <div class="contact-mail">
+        <i class="icon-mail"></i>
+        <a href="mailto:akadaenis@gmail.com" style="color:#00bcd4; font-weight:600;">akadaenis@gmail.com</a>
+    </div>
+     
+
+    <form class="contact-form" method="post" autocomplete="off">
+        <div class="mb-3">
+            <label for="name" class="form-label">Adınız</label>
+            <input type="text" class="form-control" id="name" name="Name" required />
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">E-posta</label>
+            <input type="email" class="form-control" id="email" name="Email" required />
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label">Mesajınız</label>
+            <textarea class="form-control" id="message" name="Message" required></textarea>
+        </div>
+        <div class="text-center">
+            <button type="submit">Gönder</button>
+        </div>
+    </form>
+    <div class="contact-social">
+        <p style="font-size:1.2rem; color:#222; margin-bottom:12px;">Sosyal Medya hesaplarım'dan veya mail'den bana ulaşabilirsiniz </p>
+        <a href="https://www.instagram.com/eniss_akd/" target="_blank" title="Instagram"><i class="icon-instagram"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100088845532375" target="_blank" title="Facebook"><i class="icon-facebook"></i></a>
+        <a href="https://github.com/eniscode" target="_blank" title="GitHub"><i class="icon-github"></i></a>
+        <a href="https://medium.com/&#64;akadaenis" target="_blank" title="Medium"><i class="icon-medium"></i></a>
+
+      
+        <a href="https://linkedin.com/in/enis-buğra-akada-184780229" target="_blank" title="LinkedIn"><i class="icon-linkedin"></i></a>
+    </div>
+</div>

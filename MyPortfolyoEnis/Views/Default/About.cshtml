@@ -1,0 +1,115 @@
+﻿@{
+    ViewData["Title"] = "About";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 style="font-size:1.6rem; font-weight:bold; margin-bottom:24px; color:#222;">Hakkımda</h2>
+<div style="width:100%; background:none; box-shadow:none; border-radius:0; padding:0; margin:0;">
+    <p style="font-size:1.6rem; color:#222; line-height:1.8; text-align:justify;">
+        Merhaba! Ben Enis Buğra Akada, 15 Haziran 2004’te Gaziantep’de doğdum, aslen Çankırılıyım ve İstanbul Pendik’te yaşıyorum. İstanbul Beykent Üniversitesi Bilgisayar Mühendisliği son sınıf öğrencisiyim. Aynı zamanda ailem ile, Kurtköy'de Komagene şubesi işletmekteyim. Küçüklüğümden beri teknolojiye ve bilgisayarlara ilgim var. Özellikle kendimi siber güvenlik ve yapay zeka alanlarında kendimi geliştiriyorum. Üniversite hayatım boyunca birçok projede yer aldım ve takım çalışmasının yanı sıra bireysel olarak da çeşitli yazılım geliştirme deneyimleri edindim.
+    </p>
+    <p style="font-size:1.6rem; color:#222; line-height:1.8; text-align:justify;">
+        Boş zamanlarımda futbol, kickboks ve fitness ile ilgileniyorum. Sporun bana kattığı disiplinin yazılım geliştirme süreçlerime de olumlu yansıdığını düşünüyorum. Yeni teknolojileri takip etmeyi, farklı programlama dillerini ve araçlarını öğrenmeyi seviyorum. Gelecekte siber güvenlik ve yapay zeka alanlarında uzmanlaşmak istiyorum.
+        Kariyerime web programlama öğrenerek başladım. HTML, CSS, JavaScript gibi temel teknolojilerle birlikte ASP.NET Core, MVC gibi modern çerçevelerde projeler geliştirme fırsatım oldu. Zamanla veri analizi ve makine öğrenmesi konularına ilgi duydum ve Python, Pandas, Scikit-learn gibi araçlarla çeşitli veri bilimi projeleri yürüttüm.
+        Ayrıca, C# ile masaüstü ve Web uygulamaları geliştirdim ve veritabanı yönetimi konusunda SQL Server, PostgreSQL ve MongoDB gibi sistemlerde deneyim kazandım.
+        Şu anda ise siber güvenlik alanında Ağ güvenliği ve temel konularında kendimi geliştiriyorum. Sertifikasyon süreçlerine de önem veriyor, bu alandaki yetkinlik belgelerini edinmeyi hedefliyorum.
+
+
+    </p>
+    <div style="margin-top:24px;">
+        <span style="background:#222; color:#fff; padding:6px 14px; border-radius:10px; font-size:0.8rem; font-weight:400; letter-spacing:0.4px; margin-right:5px;">⚽ Futbol</span>
+        <span style="background:#222; color:#fff; padding:6px 14px; border-radius:10px; font-size:0.8rem; font-weight:400; letter-spacing:0.4px; margin-right:5px;">🥊 Kickboks</span>
+        <span style="background:#222; color:#fff; padding:6px 14px; border-radius:10px; font-size:0.8rem; font-weight:400; letter-spacing:0.4px; margin-right:5px;">🏋️ Fitness</span>
+        <span style="background:#222; color:#fff; padding:6px 14px; border-radius:10px; font-size:0.8rem; font-weight:400; letter-spacing:0.4px; margin-right:5px;">💻 Siber Güvenlik</span>
+        <span style="background:#222; color:#fff; padding:6px 14px; border-radius:10px; font-size:0.8rem; font-weight:400; letter-spacing:0.4px;">🤖 Yapay Zeka</span>
+    </div>
+</div>
+
+
+<style>
+    html, body {
+        /* overflow: hidden !important; */
+        overflow-x: hidden;
+        height: 100%;
+        width: 100%;
+    }
+
+    #colorlib-page,
+    #colorlib-main {
+        /* overflow: hidden !important; */
+    }
+
+    .about-section {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        background: #f8f8f8;
+        border-radius: 24px;
+        box-shadow: 0 4px 32px rgba(0,0,0,0.08);
+        padding: 48px 24px;
+        margin: 40px auto;
+        max-width: 900px;
+        gap: 40px;
+    }
+
+    .about-img img {
+        width: 320px;
+        height: 320px;
+        object-fit: cover;
+        border-radius: 20px;
+        border: 4px solid #222;
+        box-shadow: 0 2px 16px rgba(0,0,0,0.15);
+        background: #222;
+    }
+
+    .about-content {
+        flex: 1;
+        min-width: 260px;
+    }
+
+        .about-content h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 18px;
+            color: #222;
+        }
+
+        .about-content p {
+            font-size: 1.25rem;
+            color: #333;
+            margin-bottom: 18px;
+            line-height: 1.7;
+        }
+
+    .about-interests {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+        .about-interests .interest {
+            background: #222;
+            color: #fff;
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+    @@media (max-width: 800px) {
+        .about-section
+
+    {
+        flex-direction: column;
+        padding: 32px 8px;
+        gap: 24px;
+    }
+
+    .about-img img {
+        width: 220px;
+        height: 220px;
+    }
+
+    }
+</style>

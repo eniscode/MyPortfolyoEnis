@@ -1,0 +1,720 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon" type="image/png" href="~/İcons/icons8-cyber-security-100.png" /> 
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MyPortfolyoEnis</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="~/elen-master/elen-master/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="~/elen-master/elen-master/css/animate.css">
+    <link rel="stylesheet" href="~/elen-master/elen-master/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/elen-master/elen-master/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="~/elen-master/elen-master/css/magnific-popup.css">
+    <link rel="stylesheet" href="~/elen-master/elen-master/css/aos.css">
+    <link rel="stylesheet" href="~/elen-master/elen-master/css/ionicons.min.css">
+    <link rel="stylesheet" href="~/elen-master/elen-master/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="~/elen-master/elen-master/css/jquery.timepicker.css">
+    <link rel="stylesheet" href="~/elen-master/elen-master/css/flaticon.css">
+    <link rel="stylesheet" href="~/elen-master/elen-master/css/icomoon.css">
+    <link rel="stylesheet" href="~/elen-master/elen-master/css/style.css">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		html, body {
+			/* overflow: hidden !important; */
+			overflow-x: hidden;
+			height: 100%;
+			width: 100%;
+		}
+
+		#colorlib-page,
+		#colorlib-main {
+			/* overflow: hidden !important; */
+		}
+
+
+
+
+		.container {
+			display: flex;
+			height: 100vh;
+			overflow: hidden;
+		}
+
+		/* Sidebar */
+		#colorlib-aside {
+			width: 500px;
+			min-width: 220px;
+			max-width: 100vw;
+			background: #000;
+			overflow-y: auto;
+			padding: 20px;
+		}
+
+		.sidebar-profile-img {
+			width: 380px;
+			height: 380px;
+			object-fit: contain;
+			border-radius: 15px;
+			margin: 0 auto 20px auto;
+			border: 4px solid #fff;
+			box-shadow: 0 0 16px rgba(0,0,0,0.3);
+			background: #222; /* Fotoğrafın orijinal oranı kareye uymuyorsa kenarlardaki boşluklar için koyu arka plan ekler */
+			display: block;
+			padding: 0; /* Ekstra boşluk olmaması için */
+		}
+
+
+
+		#colorlib-aside #colorlib-main-menu ul li {
+			margin-bottom: 10px;
+		}
+
+			#colorlib-aside #colorlib-main-menu ul li a {
+				font-size: 26px;
+				padding: 18px 0;
+				display: block;
+				letter-spacing: 1px;
+				color: #333;
+				text-decoration: none;
+			}
+
+		/* Footer */
+		.colorlib-footer {
+			margin-top: 20px !important;
+		}
+
+			.colorlib-footer ul {
+				margin-top: 10px;
+				display: flex;
+				justify-content: center;
+				list-style: none;
+			}
+
+				.colorlib-footer ul li a i {
+					font-size: 32px;
+					margin: 0 8px;
+					transition: transform 0.2s;
+					color: #333;
+				}
+
+					.colorlib-footer ul li a i:hover {
+						transform: scale(1.2);
+					}
+
+		/* İçerik Alanı */
+
+
+		.desc h2.subheading {
+			font-size: 2.8rem;
+			font-weight: bold;
+		}
+
+		.desc h1.mb-4 {
+			font-size: 4.2rem;
+			font-weight: bold;
+		}
+
+		.desc p.mb-4 {
+			font-size: 2rem;
+		}
+
+		.btn-custom {
+			font-size: 1.5rem;
+			padding: 16px 40px;
+		}
+
+
+		.btn-custom {
+			display: inline-block;
+			padding: 10px 28px;
+			border: 2px solid #00FFFF;
+			border-radius: 30px;
+			background: transparent;
+			color: #00FFFF;
+			font-size: 1.1rem;
+			font-weight: 500;
+			text-decoration: none;
+			transition: background 0.2s, color 0.2s;
+			margin: 0 4px;
+		}
+
+			.btn-custom:hover {
+				background: #333;
+				color: #fff;
+				text-decoration: none;
+			}
+
+		#colorlib-aside,
+		#colorlib-aside #colorlib-main-menu ul li a,
+		#colorlib-logo a,
+		.colorlib-footer ul li a i {
+			color: #fff !important;
+		}
+
+			#colorlib-aside #colorlib-main-menu ul li a:hover,
+			#colorlib-logo a:hover,
+			.colorlib-footer ul li a i:hover {
+				color: #ffd7 !important;
+			}
+
+		#colorlib-page {
+			display: flex;
+			min-height: 100vh;
+			width: 100vw;
+			position: relative;
+		}
+
+		#colorlib-aside {
+			display: flex;
+			flex-direction: column;
+			height: 100vh;
+			min-height: 0;
+		}
+
+		#colorlib-main-menu {
+			flex: 1 1 auto;
+			min-height: 0;
+			margin-bottom: 0;
+		}
+
+		.colorlib-footer {
+			flex-shrink: 0;
+			margin-top: auto !important;
+			margin-bottom: 16px;
+		}
+
+
+		#colorlib-main {
+			flex: 1;
+			box-sizing: border-box;
+			overflow-x: hidden;
+			z-index: 1;
+			position: relative;
+			background: #E0FFFF;
+			padding: 40px;
+			min-width: 0;
+		}
+
+
+
+		@@media (max-width: 991px) {
+			#colorlib-page
+
+			#colorlib-page {
+				flex-direction: row;
+			}
+
+			#colorlib-aside {
+				width: 180px !important;
+				min-width: 120px !important;
+				max-width: 60vw !important;
+				height: 100vh !important;
+			}
+
+			#colorlib-main {
+				padding: 12px !important;
+			}
+		}
+
+
+
+		@@media (max-width: 991px) {
+			#colorlib-page {
+				flex-direction: row;
+				width: 100vw;
+				min-width: 0;
+				overflow-x: hidden;
+			}
+
+			#colorlib-aside {
+				position: fixed;
+				left: -80vw;
+				top: 0;
+				width: 80vw !important;
+				min-width: 0 !important;
+				max-width: 100vw !important;
+				height: 100vh !important;
+				z-index: 9999;
+				background: #000 !important;
+				transition: left 0.3s;
+				box-shadow: 2px 0 8px rgba(0,0,0,0.2);
+				color: #fff;
+				display: flex;
+				flex-direction: column;
+			}
+
+				#colorlib-aside.active {
+					left: 0;
+				}
+
+			#colorlib-main {
+				margin-left: 0 !important;
+				width: 100vw !important;
+				padding: 12px !important;
+				min-width: 0;
+				box-sizing: border-box;
+			}
+		}
+
+		@@media (max-width: 750px) {
+			.desc h2.subheading {
+				font-size: 1.2rem;
+			}
+
+			.desc h1.mb-4 {
+				font-size: 1.8rem;
+			}
+
+			.desc p.mb-4 {
+				font-size: 1rem;
+			}
+
+			.btn-custom {
+				font-size: 0.95rem;
+				padding: 8px 16px;
+			}
+
+			#colorlib-aside {
+				width: 90px !important;
+				min-width: 60px !important;
+				padding: 8px !important;
+			}
+
+			.sidebar-profile-img {
+				max-width: 80px;
+				border-width: 2px;
+			}
+
+			#colorlib-main {
+				padding: 8px !important;
+			}
+
+			#colorlib-aside #colorlib-main-menu ul li a {
+				font-size: 1rem;
+				padding: 8px 0;
+			}
+
+			.colorlib-footer ul li a i {
+				font-size: 18px;
+			}
+		}
+
+		@@media (min-width: 992px) {
+			.js-colorlib-nav-toggle {
+				display: none !important;
+			}
+
+			#colorlib-aside {
+				position: static !important;
+				left: 0 !important;
+				width: 500px !important;
+				min-width: 220px !important;
+				max-width: 100vw !important;
+				height: 100vh !important;
+				box-shadow: none !important;
+			}
+
+			#colorlib-main {
+				margin-left: 0 !important;
+				width: 100% !important;
+				padding: 40px;
+			}
+
+			.colorlib-footer {
+				margin-top: 20px !important;
+			}
+
+				.colorlib-footer ul {
+					margin-top: 10px;
+					display: flex;
+					justify-content: center;
+					list-style: none;
+				}
+
+					.colorlib-footer ul li a i {
+						font-size: 32px;
+						margin: 0 8px;
+						transition: transform 0.2s;
+						color: #333;
+					}
+
+						.colorlib-footer ul li a i:hover {
+							transform: scale(1.2);
+						}
+		}
+
+		/* Flex ayarları */
+		#colorlib-page {
+			display: flex;
+			min-height: 100vh;
+			width: 100vw;
+			position: relative;
+		}
+
+		#colorlib-main {
+			flex: 1 1 0%;
+			min-width: 0;
+			box-sizing: border-box;
+			overflow-x: hidden;
+			z-index: 1;
+			position: relative;
+			background: #E0FFFF;
+			padding: 40px;
+			transition: margin-left 0.3s;
+		}
+
+
+		.sidebar-social {
+			margin-top: auto;
+			padding-bottom: 24px;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+		}
+
+			.sidebar-social ul {
+				display: flex;
+				gap: 12px;
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+
+				.sidebar-social ul li a {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 40px;
+					height: 40px;
+					border-radius: 50%;
+					background: rgba(255,255,255,0.08);
+					transition: background 0.2s;
+					text-decoration: none;
+				}
+
+					.sidebar-social ul li a:hover {
+						background: #00FFFF;
+					}
+
+					.sidebar-social ul li a i {
+						font-size: 22px;
+						color: #fff !important;
+						transition: color 0.2s;
+					}
+
+					.sidebar-social ul li a:hover i {
+						color: #222 !important;
+					}
+
+		@@media (max-width: 750px) {
+			.sidebar-social ul li a {
+				width: 28px;
+				height: 28px;
+			}
+
+				.sidebar-social ul li a i {
+					font-size: 15px;
+				}
+		}
+
+		@@media (max-width: 750px) {
+			#colorlib-aside {
+				width: 90vw !important;
+				left: -90vw;
+				padding: 8px !important;
+			}
+
+				#colorlib-aside.active {
+					left: 0;
+				}
+
+			.sidebar-profile-img {
+				max-width: 80px;
+				max-height: 80px;
+				border-width: 2px;
+			}
+
+			#colorlib-main {
+				padding: 8px !important;
+			}
+
+			#colorlib-aside #colorlib-main-menu ul li a {
+				font-size: 1rem;
+				padding: 8px 0;
+			}
+
+			.colorlib-footer ul li a i,
+			.sidebar-social ul li a i {
+				font-size: 18px;
+			}
+		}
+
+		html, body {
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			overflow: hidden; /* Tüm sayfa scroll'unu engelle */
+		}
+
+		#colorlib-page {
+			display: flex;
+			height: 100vh;
+			width: 100vw;
+		}
+
+		#colorlib-aside {
+			position: fixed;
+			left: 0;
+			top: 0;
+			width: 345px; /* Sidebar genişliğin kadar ayarla */
+			height: 100vh;
+			background: #000;
+			display: flex;
+			flex-direction: column;
+			z-index: 9999;
+		}
+
+		#colorlib-main {
+			margin-left: 345px; /* Sidebar genişliğin kadar ayarla */
+			height: 100vh;
+			overflow-y: auto;
+			flex: 1 1 0%;
+			min-width: 0;
+			box-sizing: border-box;
+			background: #E0FFFF;
+			padding: 40px;
+			position: relative;
+		}
+
+		.sidebar-social {
+			margin-top: -35px !important;
+			padding-bottom: 24px;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			background: #000;
+		}
+
+		@@media (max-width: 991px) {
+			#colorlib-aside {
+				width: 80vw !important;
+				left: -80vw;
+				transition: left 0.3s;
+			}
+
+				#colorlib-aside.active {
+					left: 0;
+				}
+
+			#colorlib-main {
+				margin-left: 0 !important;
+				width: 100vw !important;
+				padding: 12px !important;
+			}
+		}
+
+		.mobile-profile-img {
+			display: none;
+		}
+
+		@@media (max-width: 750px) {
+			.mobile-profile-img {
+				display: block;
+				margin: 0 auto 16px auto;
+				max-width: 250px;
+				max-height: 250px;
+				border-radius: 15px;
+				border: 2px solid #fff;
+				box-shadow: 0 0 8px rgba(0,0,0,0.2);
+				background: #fff;
+				object-fit: cover;
+			}
+		}
+
+		#colorlib-aside #colorlib-main-menu ul li {
+			margin-bottom: 4px; /* Eskisi 10px idi, azaltıldı */
+		}
+
+			#colorlib-aside #colorlib-main-menu ul li a {
+				padding: 8px 0; /* Eskisi 18px 0 idi, azaltıldı */
+				font-size: 22px; /* İstersen font boyutunu da biraz küçültebilirsin */
+			}
+
+		@@media (max-width: 750px) {
+			#colorlib-aside #colorlib-main-menu ul li {
+				margin-bottom: 2px;
+			}
+
+				#colorlib-aside #colorlib-main-menu ul li a {
+					padding: 5px 0;
+					font-size: 1rem;
+				}
+		}
+
+		@@media (max-width: 1580px) and (min-width: 750px) {
+			#colorlib-aside {
+				width: 420px !important;
+				min-width: 250px !important;
+				padding: 10px !important;
+			}
+
+			#colorlib-main {
+				padding: 24px !important;
+			}
+
+			.sidebar-profile-img {
+				width: 180px !important;
+				height: 180px !important;
+				max-width: 180px !important;
+				max-height: 180px !important;
+			}
+
+			#colorlib-aside #colorlib-main-menu {
+				margin-top: -35px !important; /* Eklendi: Menü yukarı taşınır */
+			}
+
+				#colorlib-aside #colorlib-main-menu ul li a {
+					font-size: 1.5rem !important;
+					padding: 6px 0 !important;
+				}
+		}
+
+		@@media (max-width: 750px) {
+			#colorlib-aside #colorlib-main-menu ul li {
+				margin-bottom: 8px; /* Menü elemanları arası boşluk artırıldı */
+			}
+
+				#colorlib-aside #colorlib-main-menu ul li a {
+					font-size: 1.1rem; /* Yazı boyutu artırıldı */
+					padding: 8px 0; /* Dikey boşluk artırıldı */
+				}
+
+			.sidebar-profile-img {
+				max-width: 160px !important;
+				max-height: 160px !important;
+				width: 160px !important;
+				height: 160px !important;
+				border-width: 4px !important;
+			}
+		}
+
+		@@media (max-width: 420px) {
+			#colorlib-aside {
+				width: 70vw !important;
+				min-width: 48px !important;
+				padding: 4px !important;
+			}
+
+			.sidebar-profile-img {
+				max-width: 60px !important;
+				max-height: 60px !important;
+				width: 60px !important;
+				height: 60px !important;
+				border-width: 2px !important;
+			}
+
+			#colorlib-aside #colorlib-main-menu ul li a {
+				font-size: 0.85rem !important;
+				padding: 4px 0 !important;
+			}
+
+			#colorlib-logo a {
+				font-size: 1.1rem !important;
+			}
+
+			.colorlib-footer ul li a i,
+			.sidebar-social ul li a i {
+				font-size: 13px !important;
+			}
+		}
+
+	</style>
+
+
+
+
+</head>
+
+
+
+<body>
+
+
+	<div id="colorlib-page">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+		<aside id="colorlib-aside" role="complementary" class="js-fullheight text-center">
+			<img src="~/elen-master/elen-master/images/WhatsApp Görsel 2025-07-01 saat 13.38.12_0fdf79ca.jpg" alt="Profil Fotoğrafı" class="sidebar-profile-img" />
+
+			<!-- ...devamı... -->
+			<h1 id="colorlib-logo"><a href="Index">Enis Buğra Akada<span>.</span></a></h1>
+			<nav id="colorlib-main-menu" role="navigation">
+				<ul>
+					<li><a href="/Default/Index">Anasayfa</a></li>
+					<li><a href="/Default/About">Hakkımda</a></li>
+					<li><a href="/Default/Skills">Yeteneklerim</a></li>
+					<li><a href="/Default/Projects">Projelerim</a></li>
+					<li><a href="/Default/References">Referanslarım</a></li>
+					<li><a href="/Default/Certificates">Sertifikalarım</a></li>
+					<li><a href="/Default/Contact">İletişim</a></li>
+
+				</ul>
+			</nav>
+			<div class="sidebar-social">
+				<ul>
+					<li><a href="https://www.facebook.com/profile.php?id=100088845532375" target="_blank"><i class="icon-facebook"></i></a></li>
+					<li><a href="https://x.com/jr_eniss" target="_blank"><i class="icon-twitter"></i></a></li>
+					<li><a href="https://www.instagram.com/eniss_akd/" target="_blank"><i class="icon-instagram"></i></a></li>
+					<li><a href="https://linkedin.com/in/enis-buğra-akada-184780229" target="_blank"><i class="icon-linkedin"></i></a></li>
+					<li><a href="https://github.com/eniscode" target="_blank"><i class="icon-github"></i></a></li>
+					<li><a href="https://medium.com/&#64;akadaenis" target="_blank" title="Medium"><i class="icon-medium"></i></a></li>
+				</ul>
+			</div>
+
+
+			
+        </aside>
+        <div id="colorlib-main">
+            @RenderBody()
+        </div>
+    </div>
+    <script src="~/elen-master/elen-master/js/jquery.min.js"></script>
+    <script src="~/elen-master/elen-master/js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="~/elen-master/elen-master/js/popper.min.js"></script>
+    <script src="~/elen-master/elen-master/js/bootstrap.min.js"></script>
+    <script src="~/elen-master/elen-master/js/jquery.easing.1.3.js"></script>
+    <script src="~/elen-master/elen-master/js/jquery.waypoints.min.js"></script>
+    <script src="~/elen-master/elen-master/js/jquery.stellar.min.js"></script>
+    <script src="~/elen-master/elen-master/js/owl.carousel.min.js"></script>
+    <script src="~/elen-master/elen-master/js/jquery.magnific-popup.min.js"></script>
+    <script src="~/elen-master/elen-master/js/aos.js"></script>
+    <script src="~/elen-master/elen-master/js/jquery.animateNumber.min.js"></script>
+    <script src="~/elen-master/elen-master/js/bootstrap-datepicker.js"></script>
+    <script src="~/elen-master/elen-master/js/jquery.timepicker.min.js"></script>
+    <script src="~/elen-master/elen-master/js/scrollax.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="~/elen-master/elen-master/js/google-map.js"></script>
+    <script src="~/elen-master/elen-master/js/main.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+	<script>
+		$(document).ready(function () {
+			$('.js-colorlib-nav-toggle').on('click', function (e) {
+				e.preventDefault();
+				$('#colorlib-aside').toggleClass('active');
+			});
+		});
+		
+		
+
+
+	</script>
+
+
+</body>
+</html>

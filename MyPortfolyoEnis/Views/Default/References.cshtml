@@ -1,0 +1,83 @@
+﻿@{
+    ViewData["Title"] = "Referanslarım";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    html, body {
+        /* overflow: hidden !important; */
+        overflow-x: hidden;
+        height: 100%;
+        width: 100%;
+    }
+
+    #colorlib-page,
+    #colorlib-main {
+        /* overflow: hidden !important; */
+    }
+
+    .reference-card {
+        border-radius: 0.5rem;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        padding: 1.5rem 1rem;
+        margin-bottom: 1.5rem;
+        background: #fff;
+        transition: box-shadow 0.2s;
+    }
+
+        .reference-card:hover {
+            box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+        }
+
+    .reference-name {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 0.25rem;
+    }
+
+    .reference-title {
+        font-size: 1.05rem;
+        color: #555;
+    }
+</style>
+
+<h1>Referanslarım</h1>
+
+<div class="row">
+    <div class="col-md-6 col-lg-4">
+        <div class="reference-card">
+            <div class="reference-name">Murat Yücedağ</div>
+            <div class="reference-title">Yazılımcı Eğitmen</div>
+        </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+        <div class="reference-card">
+            <div class="reference-name">Gökhan Mutluay</div>
+            <div class="reference-title">Acunmedya Akademi CEO</div>
+        </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+        <div class="reference-card">
+            <div class="reference-name">Abdullah Kuş</div>
+            <div class="reference-title">Yazılım Geliştirici</div>
+        </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+        <div class="reference-card">
+            <div class="reference-name">Fatih Akbulut</div>
+            <div class="reference-title">Eğitmen, Bilgisayar Mühendisi</div>
+        </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+        <div class="reference-card">
+            <div class="reference-name">Esra Çufadaroğlu</div>
+            <div class="reference-title">Acunmedya Akademi Koordinatör</div>
+        </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+        <div class="reference-card">
+            <div class="reference-name">Münire Çelikbilek</div>
+            <div class="reference-title">Eğitmen Yazılımcı</div>
+        </div>
+    </div>
+</div>

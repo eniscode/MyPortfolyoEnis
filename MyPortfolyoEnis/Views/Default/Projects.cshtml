@@ -1,0 +1,140 @@
+﻿@{
+    ViewData["Title"] = "Projects";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .project-img {
+        width: 100%;
+        height: 450px;
+        object-fit: cover;
+        border-radius: 0.5rem 0.5rem 0 0;
+        background: #f8f9fa;
+    }
+
+    .card-title {
+        font-size: 1.35rem;
+        font-weight: 600;
+    }
+
+    .card-text {
+        font-size: 1.1rem;
+    }
+
+    .icon-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+        .icon-link svg {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+        }
+</style>
+
+<h1>Projelerim</h1>
+
+<div class="row">
+    <!-- Proje 1 -->
+    <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card h-100">
+            <img src="~/Certificate/Portfolio.png" class="project-img" alt="Kişisel Portfolio Projesi">
+            <div class="card-body">
+                <h5 class="card-title">Kişisel Portfolio Projesi</h5>
+                <p class="card-text">ASP.Net Framework MVC ile Kişisel Portfolyo Sayfası.</p>
+            </div>
+            <div class="card-footer">
+                <a href="https://www.linkedin.com/in/enis-bu%C4%9Fra-akada-184780229/recent-activity/all/" target="_blank" class="btn btn-primary btn-sm icon-link">
+                    <!-- SVG -->
+                    LinkedIn
+                </a>
+                <a href="https://github.com/eniscode/AcunMedyaPortfolioProject" target="_blank" class="btn btn-dark btn-sm icon-link">
+                    <!-- SVG -->
+                    GitHub
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Proje 2 -->
+    <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card h-100">
+            <img src="~/Certificate/Hospital.png" class="project-img" alt="Proje 2 Fotoğrafı">
+            <div class="card-body">
+                <h5 class="card-title">Hastane Web Sitesi ve Randevu Yönetimi</h5>
+                <p class="card-text">ASP.Net Framework MVC ile Bir Hastanenin Yönetim Paneli ve Web Arayüzü Sayfası.</p>
+            </div>
+            <div class="card-footer">
+                <a href="https://www.linkedin.com/in/enis-bu%C4%9Fra-akada-184780229/recent-activity/all/" target="_blank" class="btn btn-primary btn-sm icon-link">
+                    <!-- SVG -->
+                    LinkedIn
+                </a>
+                <a href="https://github.com/eniscode/AcunMedyaHospitalProject" target="_blank" class="btn btn-dark btn-sm icon-link">
+                    <!-- SVG -->
+                    GitHub
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Proje 3 -->
+    <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card h-100">
+            <img src="~/Certificate/Travel.png" class="project-img" alt="Proje 3 Fotoğrafı">
+            <div class="card-body">
+                <h5 class="card-title">Seyehat Sitesi Ve Yönetim Paneli</h5>
+                <p class="card-text">Seyehatlerin Ve Turların Yönetimi Ve Arayüzü Sayfası.</p>
+            </div>
+            <div class="card-footer">
+                <a href="https://www.linkedin.com/in/enis-bu%C4%9Fra-akada-184780229/recent-activity/all/" target="_blank" class="btn btn-primary btn-sm icon-link">
+                    <!-- SVG -->
+                    LinkedIn
+                </a>
+                <a href="https://github.com/eniscode/AcunMedyaTravelProject" target="_blank" class="btn btn-dark btn-sm icon-link">
+                    <!-- SVG -->
+                    GitHub
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Proje 4 -->
+    <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card h-100">
+            <img src="~/Certificate/ANN.png" class="project-img" alt="Proje 4 Fotoğrafı">
+            <div class="card-body">
+                <h5 class="card-title">Yapay Sinir Ağı ile Futbolcu Mevki Tahmini</h5>
+                <p class="card-text">Makine Öğremesi Projesi.</p>
+            </div>
+            <div class="card-footer">
+                <a href="https://www.linkedin.com/in/enis-bu%C4%9Fra-akada-184780229/recent-activity/all/" target="_blank" class="btn btn-primary btn-sm icon-link">
+                    <!-- SVG -->
+                    LinkedIn
+                </a>
+                <a href="https://github.com/eniscode/ANN-Proejct" target="_blank" class="btn btn-dark btn-sm icon-link">
+                    <!-- SVG -->
+                    GitHub
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Proje 5: C# Eğitim Kampı -->
+    <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card h-100">
+            <img src="~/Certificate/Ekran görüntüsü 2025-02-18 014824.png" class="project-img" alt="C# Eğitim Kampı">
+            <div class="card-body">
+                <h5 class="card-title">C# Eğitim Kampı</h5>
+                <p class="card-text">C# ve .NET teknolojileriyle temel ve ileri seviye uygulama geliştirme kampı.</p>
+            </div>
+            <div class="card-footer">
+                <a href="https://www.linkedin.com/in/enis-bu%C4%9Fra-akada-184780229/recent-activity/all/" target="_blank" class="btn btn-primary btn-sm icon-link">
+                    <!-- SVG -->
+                    LinkedIn
+                </a>
+                <a href="https://github.com/eniscode/CSKampi" target="_blank" class="btn btn-dark btn-sm icon-link">
+                    <!-- SVG -->
+                    GitHub
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,118 @@
+﻿@{
+    ViewData["Title"] = "Certificates";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 style="font-size:2.4rem; font-weight:bold; margin-top:48px; color:#222;">Sertifikalarım</h2>
+
+<div style="
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 24px;
+    justify-content: center;
+">
+    <style>
+        html, body {
+            /* overflow: hidden !important; */
+            overflow-x: hidden;
+            height: 100%;
+            width: 100%;
+        }
+
+        #colorlib-page,
+        #colorlib-main {
+            /* overflow: hidden !important; */
+        }
+
+
+.certificates-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 24px;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.certificate-card {
+    width: calc(25% - 18px);
+    background: #fafafa;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.10);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 220px;
+    box-sizing: border-box;
+}
+.certificate-card img {
+    width: 100%;
+    border-radius: 12px;
+}
+@@media (max-width: 1200px) {
+    .certificate-card { width: calc(33.333% - 16px); }
+}
+@@media (max-width: 900px) {
+    .certificate-card { width: calc(50% - 12px); }
+}
+@@media (max-width: 600px) {
+    .certificate-card { width: 100%; min-width: 0; }
+    .certificates-container { gap: 12px; padding: 0 4px; }
+}
+</style>
+    <div class="certificates-container">
+
+    <!-- Sertifika Kartları -->
+    <div class="certificate-card">
+        <img src="~/certificate/A1_Ingilizce.png" alt="A1 İngilizce" />
+        <div style="margin-top:16px; font-weight:bold; font-size:1.5rem;">A1 İngilizce Sertifikası</div>
+        <div style="color:#666; font-size:1.15rem;">BTK Akademi</div>
+    </div>
+
+    <div class="certificate-card">
+        <img src="~/certificate/Bilgi_Teknolojilerine_giriş.png" alt="Bilgi Teknolojilerine Giriş" />
+        <div style="margin-top:16px; font-weight:bold; font-size:1.5rem;">Bilgi Teknolojilerine Giriş</div>
+        <div style="color:#666; font-size:1.15rem;">BTK Akademi</div>
+    </div>
+        <div class="certificate-card">
+            <img src="~/certificate/CPP_sertifika.png" alt="C++ İle Programlamaya Giriş" />
+            <div style="margin-top:16px; font-weight:bold; font-size:1.5rem;">C++ Sertifikası</div>
+            <div style="color:#666; font-size:1.15rem;">BTK Akademi</div>
+        </div>
+
+   
+
+    <div class="certificate-card">
+        <img src="~/certificate/HTML.png" alt="HTML Web" />
+        <div style="margin-top:16px; font-weight:bold; font-size:1.5rem;">HTML Sertifikası</div>
+        <div style="color:#666; font-size:1.15rem;">TURKCELL Geleceği Yazanlar</div>
+    </div>
+
+    <div class="certificate-card">
+        <img src="~/certificate/Siber.png" alt="Siber Güvenliğe Giriş" />
+        <div style="margin-top:16px; font-weight:bold; font-size:1.5rem;">Siber Güvenliğe Giriş Sertifikası</div>
+        <div style="color:#666; font-size:1.15rem;">BTK Akademi</div>
+    </div>
+
+    <div class="certificate-card">
+        <img src="~/certificate/unnamed.jpg" alt="C# Eğitim Kampı" />
+        <div style="margin-top:16px; font-weight:bold; font-size:1.5rem;">C# Eğitim Kampı Sertifikası</div>
+        <div style="color:#666; font-size:1.15rem;">M&Y Yazılım Eğitim Akademi Ve Danışmanlık</div>
+    </div>
+
+    <div class="certificate-card">
+        <img src="~/certificate/w4zrMDd4.png" alt="Digitalmag Kariyer Zirvesi" />
+        <div style="margin-top:16px; font-weight:bold; font-size:1.5rem;">Digitalmag Kariyer Zirvesi Sertifikası</div>
+        <div style="color:#666; font-size:1.15rem;">Haliç Üniversitesi Girişimcilik Ve Pazarlama Kulübü</div>
+    </div>
+
+    <div class="certificate-card">
+        <img src="~/certificate/WhatsApp Görsel 2025-07-07 saat 01.17.27_ec340f96.jpg" alt="İTÜ Yapay Zeka Zirvesi" />
+        <div style="margin-top:16px; font-weight:bold; font-size:1.5rem;">İTÜ Yapay Zeka Zirvesi Sertifikası</div>
+        <div style="color:#666; font-size:1.15rem;">İTÜ Yapay Zeka Kulübü</div>
+    </div>
+</div>
+</div>

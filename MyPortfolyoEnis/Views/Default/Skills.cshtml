@@ -1,0 +1,112 @@
+﻿@{
+    ViewData["Title"] = "Yeteneklerim";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    html, body {
+        overflow-x: hidden;
+        height: 100%;
+        width: 100%;
+    }
+
+    #colorlib-page,
+    #colorlib-main {
+        /* overflow: hidden !important; */
+    }
+
+    .skills-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 36px;
+        justify-content: center;
+    }
+
+    .skill-card {
+        background: #f8f8f8;
+        border-radius: 18px;
+        box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+        padding: 36px 40px;
+        min-width: 200px;
+        max-width: 240px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+        .skill-card img {
+            width: 72px;
+            height: 72px;
+            margin-bottom: 18px;
+        }
+
+    .skill-title {
+        font-size: 1.45rem;
+        font-weight: bold;
+        color: #222;
+    }
+
+    .skill-desc {
+        font-size: 1.18rem;
+        color: #444;
+        text-align: center;
+        margin-top: 8px;
+    }
+</style>
+
+<h2 style="font-size:2.5rem; font-weight:bold; margin-bottom:36px; color:#222; text-align:center;">Yeteneklerim</h2>
+
+<ul class="skills-list">
+    <li class="skill-card">
+        <img src="/İcons/html-5_5968267.png" alt="HTML" />
+        <div class="skill-title">HTML</div>
+        <div class="skill-desc">Web arayüz geliştirme</div>
+    </li>
+    <li class="skill-card">
+        <img src="/İcons/css-3_5968242.png" alt="CSS" />
+        <div class="skill-title">CSS</div>
+        <div class="skill-desc">Stil ve responsive tasarım</div>
+    </li>
+    <li class="skill-card">
+        <img src="/İcons/js_5968292.png" alt="JavaScript" />
+        <div class="skill-title">JavaScript</div>
+        <div class="skill-desc">Dinamik web uygulamaları</div>
+    </li>
+    <li class="skill-card">
+        <img src="/İcons/icons8-.net-framework-48.png" alt=".NET" />
+        <div class="skill-title">ASP.NET Core</div>
+        <div class="skill-desc">Modern web uygulamaları</div>
+    </li>
+    <li class="skill-card">
+        <img src="/İcons/icons8-c-48.png" alt="C++" />
+        <div class="skill-title">C++</div>
+        <div class="skill-desc">Algoritma ve programlama</div>
+    </li>
+    <li class="skill-card">
+        <img src="/İcons/icons8-c-50.png" alt="C#" />
+        <div class="skill-title">C#</div>
+        <div class="skill-desc">Masaüstü ve web projeleri</div>
+    </li>
+    <li class="skill-card">
+        <img src="/İcons/icons8-python-48.png" alt="Python" />
+        <div class="skill-title">Python</div>
+        <div class="skill-desc">Veri bilimi ve otomasyon</div>
+    </li>
+    <li class="skill-card">
+        <img src="/İcons/icons8-sql-60.png" alt="SQL" />
+        <div class="skill-title">SQL</div>
+        <div class="skill-desc">Veritabanı yönetimi</div>
+    </li>
+    <li class="skill-card">
+        <img src="/İcons/icons8-cyber-security-100.png" alt="Cyber Security" />
+        <div class="skill-title">Siber Güvenlik</div>
+        <div class="skill-desc">Ağ ve bilgi güvenliği</div>
+    </li>
+    <li class="skill-card">
+        <img src="/İcons/icons8-ai-48.png" alt="AI" />
+        <div class="skill-title">Yapay Zeka</div>
+        <div class="skill-desc">Makine öğrenmesi ve analiz</div>
+    </li>
+</ul>

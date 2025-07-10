@@ -64,9 +64,9 @@ Bu proje şu anda kişisel bir çalışma olmakla birlikte, geri bildirimlere a�
 
 ## 📬 İletişim
 
-- LinkedIn: [linkedin.com/in/enisakada](https://www.linkedin.com/in/enisakada)
-- GitHub: [github.com/enisakada](https://github.com/enisakada)
-- Mail: enisbugraakada@gmail.com
+- LinkedIn: [linkedin.com/in/enisakada](https://www.linkedin.com/in/enis-bu%C4%9Fra-akada-184780229/)
+- GitHub: [github.com/enisakada](https://github.com/eniscode)
+- Mail: akadaenis@gmail.com
 
 ---
 

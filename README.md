@@ -27,7 +27,6 @@ Bu projede hazır template veya UI kütüphaneleri kullanmak yerine, sıfırdan 
 
 ### ✔ Diğer:
 - **Visual Studio 2022**
-- **MSSQL**
 - **Git / GitHub**
 - **Yayın: Alan adı & barındırma (Shared Hosting)**
 
@@ -72,3 +71,7 @@ Bu proje şu anda kişisel bir çalışma olmakla birlikte, geri bildirimlere a�
 ---
 
 💡 Teşekkürler! Bu repoya göz attığınız için teşekkür ederim. Eğer faydalı bulduysanız bir ⭐ bırakabilirsiniz.
+![image](https://github.com/eniscode/MyPortfolyoEnis/blob/master/MyPortfolyoEnis/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-07-10%20143440.png?raw=true))
+![image](https://github.com/eniscode/MyPortfolyoEnis/blob/master/MyPortfolyoEnis/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-07-10%20143440.png?raw=true))
+![image](https://github.com/eniscode/MyPortfolyoEnis/blob/master/MyPortfolyoEnis/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-07-10%20143440.png?raw=true))
+![image](https://github.com/eniscode/MyPortfolyoEnis/blob/master/MyPortfolyoEnis/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-07-10%20143440.png?raw=true))
